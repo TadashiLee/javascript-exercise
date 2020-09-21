@@ -4,6 +4,7 @@ function fetchData(url) {
     // <-- start
     // TODO 22: 通过Promise实现异步请求
     xhr.open('GET', url);
+    xhr.send();
     // eslint-disable-next-line func-names
     xhr.onreadystatechange = function() {
       if (xhr.readyState !== 4) {
